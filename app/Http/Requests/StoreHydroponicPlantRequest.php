@@ -29,7 +29,7 @@ class StoreHydroponicPlantRequest extends FormRequest
             'expected_harvest_date' => 'required|date|after:planting_date',
             'actual_harvest_date' => 'nullable|date',
             'harvest_weight_kg' => 'nullable|numeric|min:0|max:9999.99',
-            'status' => 'required|in:growing,harvested,failed',
+            'status' => 'required|in:germinating,growing,harvested,failed',
             'notes' => 'nullable|string',
         ];
     }
